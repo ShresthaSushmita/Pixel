@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Maintain your medicine table"
+        android:layout_marginTop="55dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:id="@+id/textView3"
+        android:background="@color/colorPrimary"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/textView3"
+        android:hint="Medicine you should take"/>
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="5dp"
+        android:visibility="invisible"
+        android:id="@+id/ids"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/editText"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:layout_below="@id/editText"
+        android:hint="Respective time"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Record"
+        android:layout_below="@id/editText2"
+        android:id="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Record"
+       android:layout_below="@+id/editText2"
+        android:id="@+id/button4"
+        android:layout_toRightOf="@id/button3"
+        android:layout_gravity="center_horizontal" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/list"
+        android:layout_below="@+id/button3"
+        android:padding="3dp"
+        android:dividerHeight="3.0sp"
+
+        >
+
+    </ListView>
+</RelativeLayout>

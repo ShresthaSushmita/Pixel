@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/colorPrimary"
+
+        android:id="@+id/linear">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/texta"
+            android:text="Title"
+            android:textSize="35dp" />
+      <EditText
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="20dp"/>
+
+    </RelativeLayout>
+
+<ImageView
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/noti"
+    android:id="@+id/imageView"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@+id/linear"
+    />
+
+    <EditText
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/text"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_below="@+id/linear"
+        android:layout_marginTop="30dp"
+        android:hint="Notification"
+        />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/grp"
+        android:padding="3dp"
+        android:dividerHeight="3.0sp"
+        android:layout_below="@+id/imageView"
+        />
+
+</RelativeLayout>
+
